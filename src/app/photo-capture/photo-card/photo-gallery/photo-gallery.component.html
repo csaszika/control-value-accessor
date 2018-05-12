@@ -1,0 +1,22 @@
+<div class="row panel-group text-center">
+  <div *ngFor="let item of photos.controls; let index = index">
+    <div class="col-md-3 gallery-item">
+
+      <div class="row">
+        <img [src]="item.value.src"
+             class="gallery-picture">
+      </div>
+      <div class="row">
+        <input class="form-control"
+               [value]="item.value.fileName"
+               (input)="updateForm(index, $event.target.value)">
+      </div>
+      <div class="row">
+        <button class="btn btn-danger"
+                (click)="removeGalleryItem(index)">Delete
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

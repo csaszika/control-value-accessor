@@ -1,0 +1,7 @@
+.invalid-control {
+  background-color: red;
+}
+
+.valid-control {
+  background-color: forestgreen;
+}

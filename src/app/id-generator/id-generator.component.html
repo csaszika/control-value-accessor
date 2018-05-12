@@ -1,0 +1,24 @@
+<div class="form-group">
+  <label class="control-label">My id</label>
+  <div class="row">
+    <input #guid1 class="form-control"
+           [ngClass]="{'invalid-input': control.invalid && control.touched}"
+           (change)="onGuidChange()"
+           (input)="updateFocus($event)">
+    -
+    <input #guid2 class="form-control"
+           [ngClass]="{'invalid-input': control.invalid && control.touched}"
+           (change)="onGuidChange()"
+           (input)="updateFocus($event)">
+    -
+    <input #guid3 class="form-control"
+           [ngClass]="{'invalid-input': control.invalid && control.touched}"
+           (change)="onGuidChange()"
+           (input)="updateFocus($event)">
+    -
+    <input #guid4 class="form-control"
+           [ngClass]="{'invalid-input': control.invalid && control.touched}"
+           (change)="onGuidChange()"
+           (blur)="onTouched()">
+  </div>
+</div>

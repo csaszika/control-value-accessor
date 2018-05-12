@@ -1,0 +1,27 @@
+.gallery-item {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  background-color: teal;
+}
+
+.gallery-picture {
+  height: 12rem;
+  width: 16rem;
+  border: 0.1rem solid black;
+}
+
+.form-control {
+  text-align: center;
+  width: 16rem;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+img {
+  margin: 1.5rem;
+  border-radius: 1rem;
+}
+
+button {
+  margin: 0.5rem;
+}

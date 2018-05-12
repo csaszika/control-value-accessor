@@ -1,0 +1,17 @@
+.invalid-input {
+  border-color: red;
+  background-color: rgba(255,0,0,0.1);
+}
+
+.form-control {
+  display: inline;
+  width: 8rem;
+}
+
+.form-group {
+  margin-left: 15px;
+}
+
+.row {
+  margin-left: 0px;
+}

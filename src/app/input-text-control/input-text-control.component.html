@@ -1,0 +1,19 @@
+<div class="form-group col-xs-5">
+  <label class="control-label">My Input</label>
+  <input #inputText
+         class="form-control"
+         [ngClass]="{'invalid-input': control.invalid && control.touched}"
+         (change)="onChange($event.target.value)"
+         (blur)="onTouched()">
+
+  <span *ngIf="control.invalid && control.touched"
+        class="help-block">
+    <span *ngIf="control.errors['required']">
+      InputText is required.
+    </span>
+    <span *ngIf="control.errors['maxlength']">
+      InputText's max length is 10.
+    </span>
+  </span>
+
+</div>

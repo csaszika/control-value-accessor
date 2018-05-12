@@ -1,0 +1,21 @@
+<div class="form-group col-xs-5">
+  <label class="control-label">My Select</label>
+  <select class="form-control"
+          [ngClass]="{'invalid-input': control.invalid && control.touched}"
+          [value]="value"
+          (change)="onSelectChange($event)"
+          (blur)="onSelectBlur()">
+    <option *ngFor="let value of values"
+            [value]="value.id">
+      {{value.description}}
+    </option>
+  </select>
+
+  <span *ngIf="control.invalid && control.touched"
+        class="help-block">
+    <span *ngIf="control.errors['required']">
+      Select is required.
+    </span>
+  </span>
+
+</div>

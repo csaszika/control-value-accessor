@@ -1,0 +1,7 @@
+<div class="panel-body">
+
+  <photo-maker (addNewPhoto)="addNewPhoto($event)"></photo-maker>
+
+  <photo-gallery [photos]="photosArray"
+                 (removeItem)="removePhoto($event)"></photo-gallery>
+</div>

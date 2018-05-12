@@ -1,0 +1,12 @@
+<div [ngClass]="{'invalid-control': control.invalid,
+                 'valid-control': control.valid}">
+  <div class="row">
+    <span class="col-xs-10">{{controlName}}.value: {{control.value}}</span>
+  </div>
+  <div class="row">
+    <span class="col-xs-10">{{controlName}}.valid: {{control.valid}}</span>
+  </div>
+  <div class="row">
+    <span class="col-xs-10">{{controlName}}.untouched: {{control.untouched}}</span>
+  </div>
+</div>
