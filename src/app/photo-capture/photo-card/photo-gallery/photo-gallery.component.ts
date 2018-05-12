@@ -1,10 +1,12 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {FormArray, FormControl} from "@angular/forms";
+import {FormArray} from '@angular/forms';
+import {galleryItemInOut} from '../../../shared/animations/photo.animations';
 
 @Component({
   selector: 'photo-gallery',
   templateUrl: './photo-gallery.component.html',
-  styleUrls: ['./photo-gallery.component.css']
+  styleUrls: ['./photo-gallery.component.css'],
+  animations: [galleryItemInOut]
 })
 export class PhotoGalleryComponent {
 

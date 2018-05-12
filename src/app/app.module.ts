@@ -9,6 +9,7 @@ import { SelectControlComponent } from './select-control/select-control.componen
 import { FormControlStatusReporterComponent } from './form-control-status-reporter/form-control-status-reporter.component';
 import {PhotoCaptureModule} from './photo-capture/photo-capture.module';
 import { IdGeneratorComponent } from './id-generator/id-generator.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { IdGeneratorComponent } from './id-generator/id-generator.component';
     IdGeneratorComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     PhotoCaptureModule,
     ReactiveFormsModule

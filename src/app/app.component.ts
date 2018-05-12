@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.form = new AppForm();
 
-    this.form.valueChanges.subscribe(() => console.log(this.form));
+    // this.form.valueChanges.subscribe(() => console.log(this.form));
   }
 
   setInputTextValue(): void {
